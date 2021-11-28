@@ -1,0 +1,47 @@
+/* Dispositivos extra pequenos (celulares em posicao porta retratos, menores do que 576px */
+/* @media (max-width:576px) {} */
+
+/* Dispositivos  pequenos (celulares em posicao paisagem, menores do que 768px */
+/* @media (max-width:767.98px) {} */
+
+/* Dispositivos médios (tablets, menores do que 992px */
+/* @media (max-width:991.98px) {} */
+
+/* Dispositivos grandes (desktops, menores do que 1200px */
+/* @media (max-width:1200px) {} */
+
+/* Dispositivos extra grandes (desktops grandes, 1200px ou mais, nao tem breakpoint*/
+
+/* Dispositivos médios (tablets, menores do que 992px */
+@media (max-width:991.98px) {}
+
+/* Dispositivos  pequenos (celulares em posicao paisagem, menores do que 768px */
+@media (max-width:767.98px) {}
+
+/* Dispositivos  pequenos (celulares em posicao paisagem, menores do que 768px */
+@media (max-width:425px) {
+    .cabecalho .logo {
+        display: block;
+        margin: 0 auto;
+    }
+
+    .cabecalho nav{
+        position: static;
+        text-align: center;
+        width: 100%;
+    }
+
+    .cabecalho nav ul li{
+        display: block;
+    }
+
+    .cabecalho nav ul li a{
+        width: 100%;
+        display: block;
+    }
+
+    .painel h2 {
+        font-size: 2.5rem;
+    }
+}
+
