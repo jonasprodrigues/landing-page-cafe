@@ -1,3 +1,6 @@
+/* Dispositivos  muito pequenos (celulares em posicao paisagem, menores do que 768px */
+/* @media (max-width:375px) {{} */
+
 /* Dispositivos extra pequenos (celulares em posicao porta retratos, menores do que 576px */
 /* @media (max-width:576px) {} */
 
@@ -13,13 +16,92 @@
 /* Dispositivos extra grandes (desktops grandes, 1200px ou mais, nao tem breakpoint*/
 
 /* Dispositivos médios (tablets, menores do que 992px */
-@media (max-width:991.98px) {}
+@media (max-width:991.98px) {
+
+    .secao-com-texto p{
+        padding: 153px 25px;
+    }
+    
+    .secao-com-texto p,
+    .secao-com-texto.onde-estamos p{
+        width: 100%;
+    }
+}
 
 /* Dispositivos  pequenos (celulares em posicao paisagem, menores do que 768px */
-@media (max-width:767.98px) {}
+@media (max-width:767.98px) {
+
+        /* --- CONTATO --- */
+        .contato {
+            background-image: none;
+            background-color: #d3ae71;
+        }
+
+        .contato .texto {
+            position: relative;
+            text-align: center;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+        }
+        
+        .contato h3{
+            margin-bottom: 46px;
+        }
+
+        /* --- RODAPE --- */
+}
+
+
+@media (max-width:720px) {
+
+    /* --- LADRILHOS --- */
+    .ladrilho .grande,
+    .ladrilho .medio {
+        width: 100%;
+    }
+
+    .ladrilho .pequeno,
+    .ladrilho .pequeno.grao {
+        width: 50%;
+    }
+
+    /* --- RODAPE --- */
+
+    .rodape{
+        text-align: center;
+        background-image: none;
+        background-color: black;
+    }
+    .rodape .logo {
+        display: block;
+        margin-bottom: 122px;
+    }
+
+    .rodape ul {
+        display: block;
+        width: 100%;
+        margin-bottom: 122px;
+    }
+
+    .rodape ul li {
+        display: block;
+    }
+
+    .rodape ul li a{
+        font-size: 2rem;
+    }
+
+    .rodape .redes-sociais {
+        float: none;
+        margin-bottom: 20px;
+    }
+}
 
 /* Dispositivos  pequenos (celulares em posicao paisagem, menores do que 768px */
 @media (max-width:425px) {
+
+    /* ---CABEÇALHO   --- */
     .cabecalho .logo {
         display: block;
         margin: 0 auto;
@@ -40,8 +122,30 @@
         display: block;
     }
 
+    /* --- PAINEIS --- */
     .painel h2 {
         font-size: 2.5rem;
     }
+
+    .secao-com-texto h2{
+        font-size: 3rem;
+    }
+
+    /* --- ONDE ESTAMOS --- */
+    .secao-com-texto.onde-estamos p{
+        font-size: 2rem;
+    }
+
+    /* --- LADRILHOS --- */
 }
 
+/* Dispositivos  muito pequenos (celulares em posicao paisagem, menores do que 768px */
+@media (max-width:375px) {
+
+    /* --- LADRILHOS --- */
+    .ladrilho .pequeno,
+    .ladrilho .pequeno.grao {
+        width: 100%;
+    }
+
+}
